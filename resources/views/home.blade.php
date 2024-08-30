@@ -5,8 +5,11 @@
     <title>Flask | Personal Blog</title>
 </head>
 <body>
-    <div id="app">
-        <h1 class="">Flask Blog</h1>
+    <div id="app" >
+        <div class="" style="display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: bold;">
+            <img src="{{ asset('assets/img/vial.png') }}" alt="" class="" width="32" height="32">
+            <p class="" >Vial | Personal Blog</p>
+        </div>
         <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus deleniti voluptatibus autem iure nostrum quam, delectus laudantium nisi provident laborum voluptate illum cumque totam beatae dignissimos numquam accusantium debitis distinctio quos praesentium animi.</p>
         @auth
             <p class="">Congrats you are logged in.</p>
