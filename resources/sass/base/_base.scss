@@ -1,6 +1,7 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/breakpoints' as *;
 
+
 body {
     margin: 0;
     padding: 0;
@@ -11,47 +12,41 @@ body {
     background: $light;
     color: $dark;
     font-family: $rubik;
+    font-size: 16px;
     line-height: 1.5;
     scroll-behavior: smooth;
+
+
 }
 
-h1, h2, h3 {
+h1, h2 {
     color: $gray;
 }
 
 h1 {
     font-size: $font-lg;
+    // font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+    font-size: 35px;
 
-    @include sm(){
-        font-size: $font-xl;
-    }
+    // @include sm(){
+    //     font-size: $font-xl;
+    // }
 
 }
 
 h2 {
     font-size: $font-md;
+    font-size: 30px;
 
-    @include sm(){
-        font-size: $font-lg;
-    }
+    // @include sm(){
+    //     font-size: $font-lg;
+    // }
 }
 
-h3 {
-    font-size: $font-sm;
-
-    @include sm(){
-        font-size: $font-md;
-    }
-}
 
 
 p {
-    font-size: $font-xs;
-
-    @include sm(){
-        font-size: $font-sm;
-    }
-
+    font-size: 16px;
 }
 
 a, a:visited, a:active {
@@ -82,9 +77,10 @@ button {
     display: flex;
     flex-direction: column;
     padding: 20px 0;
+    gap: 60px;
 
     &__item {
-        padding: 20px;
+        // padding: 20px;
         line-height: 1.5;
     }
 
@@ -92,6 +88,6 @@ button {
         display: flex;
         align-items: center;
         gap: 10px;
-        background-color: orange;
+        // background-color: orange;
     }
 }

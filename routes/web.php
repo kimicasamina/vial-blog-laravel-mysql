@@ -21,13 +21,10 @@ Route::get('/login', [UserController::class, 'showLogin']);
 Route::get('/register', [UserController::class, 'showRegister']);
 Route::get('/new-post', [UserController::class, 'showCreatePost']);
 
-
-
 Route::post('/register', [UserController::class, 'register']);
 Route::post('/login', [UserController::class, 'login']);
 Route::post('/logout', [UserController::class, 'logout']);
 
-// blog post related routes
 Route::get('/post/{post}', [PostController::class, 'showPost']);
 Route::post('/create-post', [PostController::class, 'createPost']);
 Route::get('/edit-post/{post}', [PostController::class, 'showEditPost']);

@@ -11,7 +11,7 @@
             @endauth
             @foreach ($posts as $post)
             <a class="posts__item" href="/post/{{ $post->id }}">
-                <h1 class="">{{ $post['title'] }} by {{ $post->user->name }}</h1>
+                <h1 class="title">{{ $post['title'] }} by {{ $post->user->name }}</h1>
                 <p class="">{{ $post['body'] }}</p>
                 
                 @auth

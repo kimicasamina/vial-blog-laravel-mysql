@@ -4,7 +4,46 @@
 
 header {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: solid 1px $primary;
+    row-gap: 8px;
     
+    
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+       
+        &__name {
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 1.8;
+            @include sm(){
+                
+                font-size: 20px;
+            }
+        }
+
+        &__logo {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .user {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+
+    }
 }
 
 // .header {

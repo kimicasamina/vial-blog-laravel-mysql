@@ -1,9 +1,9 @@
 @extends('layout.layout')
 
 @section('content')
-    <div class="container">
-        <h3 class="">Create a New Post</h3>
-        <form action="/create-post" class="" method="POST">
+    <div class="create-post container">
+        <h1 class="title">Create a New Post</h1>
+        <form action="/create-post" class="form" method="POST">
             @csrf
             <input type="text" class="" name="title" placeholder="post title...">
             <textarea name="body" placeholder="body content..."></textarea>

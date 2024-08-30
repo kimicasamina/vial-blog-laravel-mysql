@@ -8,12 +8,11 @@
 
 
 
-
-
 $dark: #262626;
 $gray: #4d4d4d;
 $light: #fff;
 $primary: #955BA5;
+$transparent: #ffffff00;
 
 
 // FONTS 
@@ -23,6 +22,14 @@ $font-md: 1.125rem; // 18px
 $font-lg: 2rem; // 32px
 $font-xl: 2.625rem; // 42px
 $font-xxl: 3.875rem; //62px
+
+$fs-sm: clamp(0.8rem, 0.06vi + 0.79rem, 0.84rem);
+$fs-base: clamp(1rem, 0.16vi + 0.96rem, 1.13rem);
+$fs-md: clamp(1.25rem, 0.32vi + 1.17rem, 1.5rem);
+$fs-lg: clamp(1.56rem, 0.55vi + 1.42rem, 2rem);
+$fs-xl: clamp(1.95rem, 0.9vi + 1.73rem, 2.66rem);
+$fs-xxl: clamp(2.44rem, 1.41vi + 2.09rem, 3.55rem);
+$fs-xxxl: clamp(3.05rem, 2.14vi + 2.52rem, 4.73rem);
 
 $rubik: 'Rubik';
 $inter: 'Inter';

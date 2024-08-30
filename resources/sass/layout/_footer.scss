@@ -5,9 +5,13 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background: $blue;
-    color: $white;
+    background: $primary;
+    color: $light;
     font-family: 12px;
     padding: 8px 0;
 }

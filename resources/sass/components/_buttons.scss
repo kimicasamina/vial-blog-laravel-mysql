@@ -1,23 +1,51 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/breakpoints' as *;
 
-.btn-sm {
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
     cursor: pointer;
-    width: 100%;
-    // min-height: 25px;
-    padding: 20px 0;
-    background-color: $primary;
-    color: $light;
+    font-size: 16px;
     text-align: center;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    font-size: $font-xs;
+    padding: 4px 12px;
+    transition: all ease-in-out 0.3s;
+    line-height: 1.5;
     
-    @include sm(){
-        width: 80px;
+    
+    
+    &--primary {
+        background-color: $primary;
+        color: $light;
+        border: solid 1px $transparent;
+        &:hover {
+            background-color: $gray;
+            color: $light;
+            border: solid 1px $gray;
+        }
+        
+    }
+
+    &--base {
+        background-color: $transparent;
+        color: $dark;
+        border: solid 1px $dark;
+
+        &:hover {
+            background-color: $primary;
+            color: $light;
+            border: solid 1px $transparent;
+        }
     }
 }
+
+
+
+
+
 
 // .btn-sm:hover {
 //     background-color: $softBlue;
