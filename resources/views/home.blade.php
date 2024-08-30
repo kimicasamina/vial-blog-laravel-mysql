@@ -27,9 +27,10 @@
 
          
             <div class="posts">
+                <h1 class="">All Posts</h1>
                 @foreach ($posts as $post)
                 <div class="posts__item">
-                    <h3 class="">{{ $post['title'] }}</h3>
+                    <h3 class="">{{ $post['title'] }} by {{ $post->user->name }}</h3>
                     <p class="">{{ $post['body'] }}</p>
                     
                     <div class="posts__menu">

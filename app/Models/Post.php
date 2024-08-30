@@ -14,4 +14,10 @@ class Post extends Model
         'body',
         'user_id',
     ];
+
+    // return all post associated to user
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }

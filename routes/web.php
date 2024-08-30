@@ -8,10 +8,6 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
-    // using the User Auth to retrieve all post related to the curent user
-    // $posts = Auth::user()->blogPosts()->latest()->get();
-    // $posts = Post::where('user_id', Auth::id());
-    // get all user posts
     $posts = Post::where('user_id', Auth::id())->get();
     return view('home', ['posts' => $posts]);
 });
