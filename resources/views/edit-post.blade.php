@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flask | Edit Post</title>
-</head>
-<body>
-    <div id="app">
+@extends('layout.layout')
+
+@section('content')
+    <div class="container">
         <h1 class="">Edit post</h1>
         <form action="/edit-post/{{ $post->id }}" class="" method="POST">
             @csrf 
@@ -17,5 +11,5 @@
             <button class="">Save Changes</button>
         </form>
     </div>
-</body>
-</html>
+@endsection
+

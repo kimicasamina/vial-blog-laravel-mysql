@@ -1,0 +1,14 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/breakpoints' as *;
+
+.container {
+    padding: 0px 20px;
+    width: 100%;
+    max-width: map-get($breakpoints, "xl");
+    margin-inline: auto;
+    
+    @include sm (){
+        padding: 0px 65px;
+    }
+
+  }

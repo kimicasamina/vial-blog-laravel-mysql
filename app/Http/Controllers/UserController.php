@@ -57,4 +57,33 @@ class UserController extends Controller
         Session::flush();
         return redirect('/');
     }
+
+    // Login get method
+    public function showLogin()
+    {
+        // check if user is authenticated
+        if (Auth::check()) {
+            return redirect('/');
+        }
+        return view('login');
+    }
+
+    // Login get method
+    public function showRegister()
+    {
+        // check if user is authenticated
+        if (Auth::check()) {
+            return redirect('/');
+        }
+        return view('register');
+    }
+
+    public function showCreatePost()
+    {
+        // check if user is authenticated
+        if (Auth::check()) {
+            return view('new-post');
+        }
+        return redirect('/login');
+    }
 }

@@ -1,0 +1,39 @@
+
+/* Roboto  */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Rubik */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+
+
+
+
+$dark: #262626;
+$gray: #4d4d4d;
+$light: #fff;
+$primary: #955BA5;
+
+
+// FONTS 
+$font-xs: 0.875rem; // 14px
+$font-sm: 1rem;
+$font-md: 1.125rem; // 18px
+$font-lg: 2rem; // 32px
+$font-xl: 2.625rem; // 42px
+$font-xxl: 3.875rem; //62px
+
+$rubik: 'Rubik';
+$inter: 'Inter';
+
+
+// LAYOUT
+$breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1600px,
+);

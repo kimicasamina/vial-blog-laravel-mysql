@@ -35,6 +35,11 @@ class PostController extends Controller
 
     public function showPost(Post $post)
     {
+        return view('post', ['post' => $post]);
+    }
+
+    public function showEditPost(Post $post)
+    {
         // check if user is authenticated
         if (Auth::id() !== $post['user_id']) {
             return redirect('/');
@@ -43,6 +48,8 @@ class PostController extends Controller
 
         return view('edit-post', ['post' => $post]);
     }
+
+
 
     public function editPost(Post $post, Request $request)
     {

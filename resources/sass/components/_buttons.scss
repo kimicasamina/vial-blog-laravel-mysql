@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/breakpoints' as *;
+
+.btn-sm {
+    cursor: pointer;
+    width: 100%;
+    // min-height: 25px;
+    padding: 20px 0;
+    background-color: $primary;
+    color: $light;
+    text-align: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    font-size: $font-xs;
+    
+    @include sm(){
+        width: 80px;
+    }
+}
+
+// .btn-sm:hover {
+//     background-color: $softBlue;
+//     color: $white;
+//     outline: none;
+//     cursor: pointer;
+//     transition: all 0.35s;
+// }
+
