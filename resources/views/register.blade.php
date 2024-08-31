@@ -2,7 +2,7 @@
 
 @section('content')
 <form action="/register" method="POST" class="form register-form container">
-    <h1 class="form__title">Join Aaa.</h1>
+    <h1 class="form__title">Join Vial.</h1>
     @csrf
     <div class="form__field">
         <label for="name" class="form__label">Username</label>

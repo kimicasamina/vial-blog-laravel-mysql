@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vial | Blog</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    {{-- @vite(['resources/css/app.css', 'resources/sass/app.scss', 'resources/js/app.js']) --}}
 </head>
 <body>
     <main id="app" class="main">

@@ -18,7 +18,7 @@
                     </a>
                         
                         @guest
-                        <small class="post__details">Created by {{ $post->user->name }} | {{ date_format($post->created_at, "m/d/y") }}</small>
+                        <small class="post__details">Created by {{ $post->user->name }}  |  {{ date_format($post->created_at, "m/d/y") }}</small>
                         @endguest
                         <p class="post__body">{{ substr($post->body, 0, 325) }}...</p>
                         
