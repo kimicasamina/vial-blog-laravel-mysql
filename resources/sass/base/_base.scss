@@ -2,55 +2,65 @@
 @use '../abstracts/breakpoints' as *;
 
 
+
 body {
     margin: 0;
     padding: 0;
 
     width: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
 
     background: $light;
-    color: $dark;
+    // color: $dark;
     font-family: $rubik;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 
 
 }
 
+
+
 h1, h2 {
     color: $gray;
+    line-height: 1.2;
+    @include sm(){
+        
+        line-height: 1.4;
+    }
 }
 
 h1 {
-    font-size: $font-lg;
-    // font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
-    font-size: 35px;
-
-    // @include sm(){
-    //     font-size: $font-xl;
-    // }
-
+    font-size: 25px;
+    font-weight: 700;
+    
+    @include sm(){
+        font-size: 35px;
+    }
 }
 
 h2 {
     font-size: $font-md;
-    font-size: 30px;
+    font-size: 20px;
 
-    // @include sm(){
-    //     font-size: $font-lg;
-    // }
+    @include sm(){
+        font-size: 30px;
+    }
 }
 
 
 
 p {
     font-size: 16px;
+    line-height: 1.5;
 }
 
 a, a:visited, a:active {
     text-decoration: none;
+    color: $gray;
 }
 
 li {
@@ -73,21 +83,8 @@ button {
     border: none;
 }
 
-.posts {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-    gap: 60px;
-
-    &__item {
-        // padding: 20px;
-        line-height: 1.5;
-    }
-
-    &__menu {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        // background-color: orange;
-    }
+input {
+    // border: none;
+    // border: solid 1px $primary;
+    // outline: none;
 }

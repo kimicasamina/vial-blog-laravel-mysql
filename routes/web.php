@@ -10,9 +10,9 @@ use App\Http\Controllers\UserController;
 Route::get('/', function () {
     $posts = [];
     if (Auth::check()) {
-        $posts = Post::where('user_id', Auth::id())->get();
+        $posts = Post::where('user_id', Auth::id())->latest()->get();
     } else {
-        $posts = Post::all();
+        $posts = Post::latest()->get();
     }
     return view('home', ['posts' => $posts]);
 });

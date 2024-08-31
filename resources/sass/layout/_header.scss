@@ -9,6 +9,11 @@ header {
     border-bottom: solid 1px $primary;
     row-gap: 8px;
     
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     
     .brand {
         display: flex;
@@ -34,6 +39,11 @@ header {
     .user {
         display: flex;
         flex-direction: column;
+        padding-top: 20px;
+
+        @include sm() {
+            padding-top: 45px;
+        }
     }
 
     .cta-links {

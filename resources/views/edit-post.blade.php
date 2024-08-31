@@ -1,15 +1,20 @@
 @extends('layout.layout')
 
 @section('content')
-    <div class="container">
-        <h1 class="">Edit post</h1>
-        <form action="/edit-post/{{ $post->id }}" class="" method="POST">
-            @csrf 
-            @method('PUT')
-            <input type="text" class="" name="title" value="{{ $post->title }}">
-            <textarea name="body">{{ $post->body }}</textarea>
-            <button class="">Save Changes</button>
-        </form>
+<form action="/edit-post/{{ $post->id }}" class="form edit-post-form container" method="POST">
+    @csrf 
+    @method('PUT')
+    <h1 class="form__title">Edit post</h1>
+    <div class="form__field">
+        <label for="title" class="form__label">Title</label>
+        <input type="text" class="form__input" name="title" value="{{ $post->title }}">
     </div>
+    <div class="form__field">
+        <label for="body" class="form__label">Body</label>
+        <textarea name="body" class="form__input" wrap="balance" cols="30" rows="15">{{ $post->body }}</textarea>
+    </div>
+    <button class="btn btn--primary">Save Changes</button>
+</form>
+    
 @endsection
 

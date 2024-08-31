@@ -1,0 +1,81 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/breakpoints' as *;
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    // gap: 75px;
+    
+    &__heading {
+        margin-bottom: 35px;
+        color: $primary;
+    
+    }
+}
+.post  {
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 45px;
+
+        @include sm(){
+            margin-bottom: 75px;
+        }
+
+    }
+
+    &__title {
+        text-wrap: wrap;
+        line-height: 1.3;
+        font-weight: 700;
+        font-family: $rubik;
+        color: $gray;
+
+        @include sm(){
+            text-wrap: balance;
+        }
+
+
+    }
+
+    &__details {
+        font-size: 14px;
+
+    }
+
+    &__body {
+        font-family: $rubik;
+        font-weight: 400;
+        font-size: 16px;
+        text-wrap: balance;
+        line-height: 1.5;
+        color: $dark;
+        margin: 14px 0;
+        
+    
+        @include sm(){
+            text-wrap: pretty;
+        }
+
+        // p #{&} #{&}{
+        //     color: red;
+        //     padding: 30px 0;
+        // }
+
+    }
+
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        gap: 8px;
+        max-width: 140px;
+
+        font-size: 14px;
+    }
+
+    
+}

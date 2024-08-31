@@ -1,13 +1,18 @@
 @extends('layout.layout')
 
 @section('content')
-    <div class="create-post container">
-        <h1 class="title">Create a New Post</h1>
-        <form action="/create-post" class="form" method="POST">
-            @csrf
-            <input type="text" class="" name="title" placeholder="post title...">
-            <textarea name="body" placeholder="body content..."></textarea>
-            <button type="submit" class="">Save Post</button>
-        </form>
-    </div>
+    <form action="/create-post" class="form add-post-form container" method="POST">
+        <h1 class="form__title">Create a New Post</h1>
+        @csrf
+        <div class="form__field">
+            <label for="title" class="form__label">Title</label>
+            <input type="text" class="form__input" name="title" placeholder="post title...">
+        </div>
+        <div class="form__field">
+            <label for="body" class="form__label">Body</label>
+            <textarea name="body" placeholder="body content..." class="form__input" wrap="balance" cols="30" rows="20"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">Save Post</button>
+    </form>
+    
 @endsection
